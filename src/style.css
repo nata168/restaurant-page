@@ -1,0 +1,82 @@
+
+body {
+  color: white;
+  margin: 1vh;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vh;
+}
+
+/* navigation */
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  border: 2px solid white;
+  height: 8vh;
+}
+
+nav > button {
+  color: white;
+  width: 12vw;
+  height: 5vh;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 24px;
+  font-size: calc(0.8vw + 0.8vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button.selected {
+  border: 2px solid green;
+  color: green;
+}
+
+button:hover {
+  border: 2px solid lightblue;
+  color: lightblue;
+}
+
+button:active {
+  border: 2px solid green;
+  color: green;
+}
+
+div#content {
+  border: 2px solid white;
+  width: max(45vw, 480px);
+  align-self: center;
+  padding: 2vw;
+}
+
+/* home */
+
+#content > div.home-heading {
+  font-size: 2rem;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: lightblue;
+}
+
+/* menu */
+
+#content > div.menu-heading {
+  font-size: 2rem;
+}
+
+/* contact */
+
+#content > div.contact-heading {
+  font-size: 2rem;
+}
